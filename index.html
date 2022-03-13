@@ -8,26 +8,342 @@
     <title>calculatrice</title>
 </head>
 <body>
-    <div class="calculatrice">
-        <!-- bloc ecrant -->
-        <div class="contener-ecrant">
-            <!-- ajouter un contener pour la plaque et le texte ici -->
-
-            <!-- ajouter un conteneur pour l'écrant ici -->
-
-        </div>
-        <!-- le bloc qui contien tout les boutons -->
-        <div class="boutons">
-
-            <!-- contener boutons haut -->
-            <div class="boutons_haut">
-                <!-- ajouter les div de ligne ici avec leurs boutons-->
-
+    <div class="back-calculatrice">
+        <div class="calculatrice">
+            <!-- bloc ecrant -->
+            <div class="contener-ecrant">
+                <!-- ajouter un contener pour la plaque et le texte ici -->
+                <div class="plaque">
+                    <p class="titre">SCIENTIFIC</p>
+                    <div class="plaque_solaire"></div>
+                </div>
+                <!-- ajouter un conteneur pour l'écrant ici -->
+                <div class="ecrant">
+                    <div class="back-screen">
+                        <input type="text" id="screen" disabled>
+                    </div>
+                </div>
             </div>
-            <!-- contener boutons bas -->
-            <div class="boutons_bas">
-                <!-- ajouter les div de ligne ici avec leurs boutons-->
-
+            <!-- le bloc qui contien tout les boutons -->
+            <div class="boutons">
+    
+                <!-- contener boutons haut -->
+                <div class="boutons_haut">
+                    <!-- ajouter les div de ligne ici avec leurs boutons-->
+                    <div class="ligne l1">
+    
+                        <div class="bouton b1">
+                            <button>2nd</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut">
+                                <span class="green">CONSTRAST</span>
+                            </div>
+                            <button>MODE</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <button><--</button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <button>--></button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <button>OFF</button>
+                        </div>
+    
+                        <div class="bouton b6">
+                            <div class="haut btw">
+                                <span>MC</span>
+                                <span><span class="green">[</span>Sd<span class="green">]</span></span>
+                            </div>
+                            <button>on/AC</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="ligne l2">
+    
+                        <div class="bouton b1">
+                            <button>ALPHA</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut"><--</div>
+                            <button>ENG</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut">rac</div>
+                            <button>x<sup>y</sup></button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut">
+                                <span>x<sup>3</sup></span>
+                            </div>
+                            <button>x <sup>2</sup></button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut">
+                                <span>10<sup>x</sup></span>
+                            </div>
+                            <button>log</button>
+                        </div>
+    
+                        <div class="bouton b6">
+                            <div class="haut">
+                                <span>e<sup>x</sup></span>
+                            </div>
+                            <button>In</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="ligne l3">
+    
+                        <div class="bouton b1">
+                            <div class="haut"><span class="carre">A</span></div>
+                            <button>(-)</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut btw">
+                                <span class="flech">--</span>
+                                <span class="carre">B</span>
+                            </div>
+                            <button>,,,</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut btw">
+                                <span>HYP</span>
+                                <span class="carre">C</span>
+                            </div>
+                            <button>x<sup>-1</sup></button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut btw">
+                                <span>sin<sup>-1</sup></span>
+                                <span class="carre">D</span>
+                            </div>
+                            <button>sin</button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut btw">
+                                <span>cos<sup>-1</sup></span>
+                                <span class="carre">E</span>
+                            </div>
+                            <button>cos</button>
+                        </div>
+    
+                        <div class="bouton b6">
+                            <div class="haut btw">
+                                <span>tan<sup>-1</sup></span>
+                                <div class="carre">F</div>
+                            </div>
+                            <button>tan</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="ligne l4">
+    
+                        <div class="bouton b1">
+                            <div class="haut"><span>RCL</span></div>
+                            <button>STO</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut">
+                                <span><sup>d</sup>/c</span>
+                            </div>
+                            <button>a <sup><sup>b</sup>/c</sup></button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut"><span>[r]</span></div>
+                            <button>(</button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut btw">
+                                <span>x!</span>
+                                <span class="carre">X</span>
+                            </div>
+                            <button>)</button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut btw">
+                                <span>;</span>
+                                <span class="carre">Y</span>
+                            </div>
+                            <button>,</button>
+                        </div>
+    
+                        <div class="bouton b6">
+                            <div class="haut btw">
+                                <span>M-</span>
+                                <span class="carre">M</span>
+                            </div>
+                            <button>M+</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                <!-- contener boutons bas -->
+                <div class="boutons_bas">
+                    <!-- ajouter les div de ligne ici avec leurs boutons-->
+    
+                    <div class="ligne l1">
+    
+                        <div class="bouton b1">
+                            <div class="haut"><span><span class="green">[</span>A<span class="green">]</span></span></div>
+                            <button>7</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut"><span><span class="green">[</span>8<span class="green">]</span></span></div>
+                            <button>8</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut"><span><span class="green">[</span>c<span class="green">]</span></span></div>
+                            <button>9</button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut">
+                                <span>rac</span>
+                            </div>
+                            <button>rac</button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut">
+                                <span>ins</span>
+                            </div>
+                            <button>DEL</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="ligne l2">
+    
+                        <div class="bouton b1">
+                            <div class="haut">
+                                <span><span class="green">[</span>y<span class="green">]</span></span>
+                            </div>
+                            <button>4</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut"><span><span class="green">[</span>yOn<span class="green">]</span></span></div>
+                            <button>5</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut"><span><span class="green">[</span>yOn-1<span class="green">]</span></span></div>
+                            <button>6</button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut btw">
+                                <span>nCr</span>
+                                <span class="blue">Poll</span>
+                            </div>
+                            <button>x</button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut btw">
+                                <span>nPr</span>
+                                <span class="blue">Recl</span>
+                            </div>
+                            <button>/</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="ligne l3">
+    
+                        <div class="bouton b1">
+                            <div class="haut">
+                                <span><span class="green">[</span>x<span class="green">]</span></span>
+                            </div>
+                            <button>1</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut"><span><span class="green">[</span>xOn<span class="green">]</span></span></div>
+                            <button>2</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut"><span><span class="green">[</span>xOn-1<span class="green">]</span></span></div>
+                            <button>3</button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut">
+                                <span>x</span>
+                            </div>
+                            <button>+</button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut">
+                                <span>y</span>
+                            </div>
+                            <button>-</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="ligne l4">
+    
+                        <div class="bouton b1">
+                            <div class="haut">
+                                <span>RANDOM</span>
+                            </div>
+                            <button>0</button>
+                        </div>
+    
+                        <div class="bouton b2">
+                            <div class="haut"><span>RND</span></div>
+                            <button>.</button>
+                        </div>
+    
+                        <div class="bouton b3">
+                            <div class="haut"><span>PI</span></div>
+                            <button>EXP</button>
+                        </div>
+    
+                        <div class="bouton b4">
+                            <div class="haut">
+                                <span>DRG-</span>
+                            </div>
+                            <button>ANS</button>
+                        </div>
+    
+                        <div class="bouton b5">
+                            <div class="haut">
+                                <span>%</span>
+                            </div>
+                            <button>=</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
             </div>
         </div>
     </div>

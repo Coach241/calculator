@@ -5,33 +5,187 @@
     user-select: none;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
+}
+.back-calculatrice{
+    width: 380px;
+    height: 640px;
+    background-color: #d88f53;
+    border-radius: 20px 20px 40px 40px / 30px 30px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 6px 0 8px #cc803eea inset,
+                -6px 0 8px #cc803eea inset;
 }
 .calculatrice{
     width: 350px;
-    height: 600px;
-    border: solid 1px #000;
+    height: 622px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: #383837;
+    border-radius: 7px 7px 40px 40px;
+    overflow: hidden;
+    box-shadow: 13px 0px 7px rgba(19, 18, 18, 0.342) inset,
+                -8px 0px 7px rgba(19, 18, 18, .342) inset;
 }
 .contener-ecrant{
     width: 100%;
-    height: 200px;
-    border:  solid 1px yellow;
+    height: 180px;
+    background-color: #303030;
+    border-radius: 0 0 60px 60px;
+    border-bottom: solid 1px #2b2b2b;
+    box-shadow: 0 -2px 3px rgba(26, 26, 26, 0.5) inset,
+                0 -1px 3px rgb(255, 255, 255),
+                10px 0 3px 0 rgba(14, 13, 13, 0.103) inset,
+                -10px 0 3px 0 rgba(14, 13, 13, 0.103) inset;
 }
 .boutons{
     width: 100%;
     height: 400px;
 }
 .boutons > div{
-    width: 300px;
+    width: 320px;
     height: 200px;
     margin: auto;
 }
-.boutons_haut{
-    border: solid 1px royalblue;
+
+.plaque{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    margin: 0 auto 10px auto;
+    border-bottom: solid 2px #d2823e;
 }
-.boutons_bas{
-    border: solid 1px darkred;
+.plaque p{
+    position: relative;
+    color: #fff;
+}
+.plaque_solaire{
+    width: 80px;
+    height: 25px;
+    background-color: #665a4e;
+    border: solid 2px #454340;
+    border-radius: 5px;
+}
+.ecrant{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#screen{
+    width: 260px;
+    height: 80px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7e7d71;
+    border:  solid 1px #6a6660;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .1) inset;
+}
+.back-screen{
+    width: 280px;
+    height: 110px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #d2823e;
+    border-radius: 8px 8px 15px 15px;
+}
+.ligne{
+    width: 100%;
+    height: 50px;
+}
+.boutons_haut .ligne{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.boutons_bas .ligne{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+button{
+    border: none;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, .5) inset,
+                2px 2px 4px rgba(0, 0, 0, .5) inset,
+                0 0 2px 1px black;
+}
+.bouton{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.haut{
+    position: absolute;
+    width: 100%;
+    font-size: 10px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #d4924f;
+}
+.green{
+    color: #a7b47c;
+}
+.boutons_haut .haut{
+    transform: translateY(-33%);
+}
+.boutons_bas .haut{
+    transform: translateY(-50%);
+}
+.boutons_haut button{
+    width: 45px;
+    height: 30px;
+    background-color: #4e4c4b;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+.boutons_bas button{
+    width: 55px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #363732;
+    color: #fff;
+    border-radius: 20px 20px 20px 20px / 14px 14px 20px 20px;
+}
+.btw{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+}
+.carre{
+    display: inline-block;
+    border: solid 1px #706e93;
+    color: #706e93;
+}
+.boutons_haut .l2 .b1 button{
+    font-size: .7rem;
+    color: #706e93;
+}
+.boutons_haut .l1 .b1 button{
+    background-color: #e06e26;
+}
+.boutons_haut .l1 .b6 button{
+    background-color: #584abc;
+}
+.blue{
+    color: #706e93;
+}
+.boutons_haut .l1 .b2 button{
+    font-size: 0.6rem;
 }
