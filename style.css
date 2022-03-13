@@ -1,0 +1,243 @@
+:root {
+    --colordefont: #83b4a1;
+    --colorrouge: rgb(163, 0, 0);
+
+}
+
+@font-face {
+    font-family: mt;
+    src: url('./MontserratAlternates-Black.ttf');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(235, 235, 235);
+
+
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+
+}
+
+.corps {
+    border: 3px solid #005534;
+    width: 300px;
+    height: 650px;
+    border-radius: 30px;
+    background-color: var(--colordefont);
+
+
+
+
+}
+
+.corps h2 {
+    font-family: sans-serif;
+    color: #002c1b;
+}
+
+.tete {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.droit {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.droit h3 {
+    color: var(--colorrouge);
+    font-size: 25px;
+    font-family: sans-serif;
+
+
+}
+
+.droit h3 span {
+    font-size: 18px;
+}
+
+.droit p {
+    align-items: center;
+    color: blanchedalmond;
+    color: #002c1b;
+    font-weight: 900;
+    font-size: 12px;
+    font-family: 'mt';
+
+}
+
+.space {
+    letter-spacing: 1.5px;
+
+}
+
+.corps .ecran {
+    border: 12px solid #002c1b55;
+    border-bottom: 12px solid #4b6b5e;
+    border-right: 12px solid #466659;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 12px;
+    padding: 7px 20px;
+    font-size: px;
+    font-weight: 600;
+    background-color: #bad4ca;
+    position: relative;
+
+}
+
+.corps .ecran .D {
+
+    width: 10px;
+    color: var(--colordefont);
+    font-size: 9px;
+    margin: 0 0 2px 50px;
+    text-align: center;
+
+}
+
+.black {
+    background-color: black;
+    color: var(--colordefont);
+}
+
+.scroll {
+    width: 6px;
+    height: 55px;
+    border-radius: 20px;
+    border: 1px solid #add4c5;
+    background-color: black;
+    position: absolute;
+    right: 14px;
+    top: 18px;
+}
+
+.haut {
+    letter-spacing: 3px;
+}
+
+.bas {
+
+    margin-left: 20px;
+}
+
+
+.bas p:nth-child(1),
+.bas p:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bas p:nth-child(1) {
+    border: 1px solid;
+    border-right: none;
+
+}
+
+.bas p:nth-child(2) {
+    border: 1px solid;
+    border-right: none;
+    border-top: none;
+}
+
+.partie3 {
+    width: auto;
+
+
+
+
+    height: 130px;
+    margin: 0 16px;
+}
+
+small {
+    font-size: 7px;
+    text-align: center;
+}
+
+.partie3>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+}
+
+.partie3 button {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    background: linear-gradient(#83b4a1, #add4c5);
+    border: .5px solid #002c1b;
+    border-radius: 3px;
+
+}
+
+.element4 button {
+    color: white;
+    width: 45px;
+    background-color: #324d43;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.322);
+
+}
+
+.partie4 {
+
+    margin: 0 16px;
+
+}
+
+.partie4>.element4 {
+    justify-content: space-around;
+    display: flex;
+}
+
+button .supp {
+    font-size: 12px;
+}
+
+.element4 .couleur {
+    background-color: darkgoldenrod;
+    color: black;
+    font-weight: 700;
+}
+
+.rd1 {
+    border-top-left-radius: 10px;
+}
+
+.rd2 {
+    border-top-right-radius: 10px;
+}
+
+.rd3 {
+    border-bottom-left-radius: 10px;
+}
+
+.rd4 {
+    border-bottom-right-radius: 10px;
+}
